@@ -24,15 +24,15 @@ fun main() {
 
     val panel1 = Panel(
         mutableListOf(
-            mutableListOf(0, 0, 0, 0),
-            mutableListOf(0, 0, 0, 0),
-            mutableListOf(0, 0, 0, 0),
-            mutableListOf(2, 2, 4, 8)
+            mutableListOf(0, 0, 0, 8),
+            mutableListOf(0, 0, 0, 4),
+            mutableListOf(0, 0, 0, 2),
+            mutableListOf(0, 0, 0, 2)
         )
     )
 
 
-    panel1.right()
+    panel1.down()
 
 
     panel1.panel.toString().forEach {

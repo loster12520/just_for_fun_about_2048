@@ -76,6 +76,7 @@ class Panel(private val size: Int, private val odds: Double, seed: Long, private
                     it
             }
         }
+        addNewBlock()
     }
 
     fun right() {
@@ -105,15 +106,75 @@ class Panel(private val size: Int, private val odds: Double, seed: Long, private
                     it
             }
         }
+        addNewBlock()
     }
 
     fun up() {
         save()
         for (i in 0..<size) {
+            val queue = LinkedList<Int>()
             for (j in 0..<size) {
+                if (panel[j][i] != 0) {
+                    queue.add(panel[j][i])
+                }
+            }
 
+            val res = mutableListOf<Int>()
+            while (!queue.isEmpty()) {
+                val int = queue.pollFirst()
+                if (queue.peekFirst() == int) {
+                    queue.pollFirst()
+                    res.add(int * 2)
+                } else {
+                    res.add(int)
+                }
+            }
+
+            var index = 0
+            res.forEach {
+                panel[index][i] = it
+                index++
+            }
+            while (index < size) {
+                panel[index][i] = 0
+                index++
             }
         }
+        addNewBlock()
+    }
+
+    fun down() {
+        save()
+        for (i in 0..<size) {
+            val queue = LinkedList<Int>()
+            for (j in 0..<size) {
+                if (panel[j][i] != 0) {
+                    queue.push(panel[j][i])
+                }
+            }
+
+            val res = mutableListOf<Int>()
+            while (!queue.isEmpty()) {
+                val int = queue.pollFirst()
+                if (queue.peekFirst() == int) {
+                    queue.pollFirst()
+                    res.add(int * 2)
+                } else {
+                    res.add(int)
+                }
+            }
+
+            var index = size - 1
+            res.forEach {
+                panel[index][i] = it
+                index--
+            }
+            while (index >= 0) {
+                panel[index][i] = 0
+                index--
+            }
+        }
+        addNewBlock()
     }
 
     private fun save() {
