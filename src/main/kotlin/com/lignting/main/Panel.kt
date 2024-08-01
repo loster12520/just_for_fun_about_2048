@@ -3,7 +3,7 @@ package com.lignting.main
 import java.util.*
 import kotlin.random.Random
 
-class Panel(private val size: Int, private val odds: Double, seed: Long, private val safeTimes: Int) {
+class Panel(val size: Int, private val odds: Double, seed: Long, private val safeTimes: Int) {
     constructor(size: Int, odds: Double, seed: Long) : this(size, odds, seed, 1)
     constructor(size: Int, odds: Double) : this(size, odds, System.currentTimeMillis())
     constructor(size: Int) : this(size, 0.1)
@@ -12,7 +12,7 @@ class Panel(private val size: Int, private val odds: Double, seed: Long, private
         this.panel = panel
     }
 
-    lateinit var panel: MutableList<MutableList<Int>>
+    var panel: MutableList<MutableList<Int>>
     val panelQueue = LinkedList<MutableList<MutableList<Int>>>()
 
     private val random = Random(seed)
@@ -30,6 +30,7 @@ class Panel(private val size: Int, private val odds: Double, seed: Long, private
     }
 
     private fun addNewBlock() {
+        if (!hasMove()) return
         val list = mutableListOf<Pair<Int, Int>>()
         panel.forEachIndexed { i, ints ->
             ints.forEachIndexed { j, int ->
@@ -37,6 +38,7 @@ class Panel(private val size: Int, private val odds: Double, seed: Long, private
                     list.add(Pair(i, j))
             }
         }
+        if (list.isEmpty()) throw RuntimeException("失败！！")
         val place = list[random.nextInt(list.size)]
         panel[place.first][place.second] =
             if (random.nextDouble() < odds) 4
@@ -179,17 +181,29 @@ class Panel(private val size: Int, private val odds: Double, seed: Long, private
 
     private fun save() {
         panelQueue.push(panel.let {
-            val list = mutableListOf<MutableList<Int>>()
-            for (i in 1..size) {
-                list.add(mutableListOf())
-                for (j in 1..size) {
-                    list[i - 1].add(panel[i - 1][j - 1])
+            val res = mutableListOf<MutableList<Int>>()
+            it.forEach {
+                res.add(mutableListOf())
+                it.forEach {
+                    res.get(res.size - 1).add(it)
                 }
             }
-            list
+            res
         })
         if (panelQueue.size > safeTimes)
             panelQueue.pollLast()
+    }
+
+    private fun hasMove(): Boolean {
+        val compare = panelQueue.peek() ?: return true
+        panel.indices.forEach { i ->
+            panel[i].indices.forEach { j ->
+                if (panel[i][j] != compare[i][j]) {
+                    return true
+                }
+            }
+        }
+        return false
     }
 
     fun reset() {

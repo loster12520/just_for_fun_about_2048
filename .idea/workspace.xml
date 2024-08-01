@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5ee7643-fc0c-4858-9aa2-9c44e6c7079c" name="更改" comment="小孩子闹着玩写的readme">
+    <list default="true" id="c5ee7643-fc0c-4858-9aa2-9c44e6c7079c" name="更改" comment="小孩子闹着玩写的">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/lignting/main/shaderTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/lignting/ui/UI.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/lignting/main/Panel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/lignting/main/Panel.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/lignting/main/Test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/lignting/main/Test.kt" afterDir="false" />
     </list>
@@ -19,6 +23,26 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="New2048" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -27,9 +51,32 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;loster12520&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/loster12520/just_for_fun_about_2048.git&quot;,
+    &quot;accountId&quot;: &quot;38c43be1-e622-4ed0-a226-ed0021fdab5d&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$PROJECT_DIR$/../../Program Files/Java/jdk-18.0.1.1/lib/src.zip!/java.base/java/util/ArrayList.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.9.10/9960410cb3852df9251d5b30927ff2070bfb453/kotlin-stdlib-common-1.9.10-sources.jar!/generated/_Collections.kt" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.9.10/9960410cb3852df9251d5b30927ff2070bfb453/kotlin-stdlib-common-1.9.10-sources.jar!/kotlin/collections/ArrayList.kt" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2f4lXtarWZUARJMw3Pfd9Xyu4qB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -38,23 +85,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.构建 New2048.executor": "Run",
+    "Kotlin.TestKt.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Program Files/Java/javafx-sdk-22.0.1/src.zip",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "库",
+    "project.structure.proportion": "0.14550781",
+    "project.structure.side.proportion": "0.24336794",
+    "settings.editor.selected.configurable": "cn.yiiguxing.plugin.translate",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "kotlin-gradle-user-dirs": [
+      "C:\\Users\\xiaos\\.gradle"
+    ]
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RunManager" selected="Kotlin.TestKt">
+    <configuration name="ShaderTestKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lignting.main.ShaderTestKt" />
+      <module name="New2048.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.lignting.main.TestKt" />
       <module name="New2048.main" />
+      <shortenClasspath name="NONE" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Program Files\Java\javafx-sdk-22.0.1\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -62,8 +133,17 @@
     <recent_temporary>
       <list>
         <item itemvalue="Kotlin.TestKt" />
+        <item itemvalue="Kotlin.ShaderTestKt" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -80,7 +160,33 @@
       <workItem from="1713695184282" duration="3143000" />
       <workItem from="1714059501221" duration="657000" />
       <workItem from="1714144453403" duration="646000" />
-      <workItem from="1714146228348" duration="3083000" />
+      <workItem from="1714146228348" duration="3535000" />
+      <workItem from="1714149833265" duration="119000" />
+      <workItem from="1714193859791" duration="5927000" />
+      <workItem from="1715182380417" duration="22000" />
+      <workItem from="1717221995590" duration="413000" />
+      <workItem from="1718529672024" duration="891000" />
+      <workItem from="1720742802166" duration="5080000" />
+      <workItem from="1720781777079" duration="4061000" />
+      <workItem from="1720839643293" duration="721000" />
+      <workItem from="1720840385850" duration="1254000" />
+      <workItem from="1720876324997" duration="600000" />
+      <workItem from="1721017744259" duration="2906000" />
+      <workItem from="1721028765240" duration="145000" />
+      <workItem from="1721028918497" duration="449000" />
+      <workItem from="1721029377789" duration="476000" />
+      <workItem from="1721029862689" duration="2161000" />
+      <workItem from="1721096360266" duration="2546000" />
+      <workItem from="1721140170840" duration="1302000" />
+      <workItem from="1721183733798" duration="1948000" />
+      <workItem from="1721222688602" duration="2235000" />
+      <workItem from="1721224955382" duration="3945000" />
+      <workItem from="1721265808575" duration="2019000" />
+      <workItem from="1721271093421" duration="2294000" />
+      <workItem from="1721274967528" duration="1089000" />
+      <workItem from="1721352854419" duration="12000" />
+      <workItem from="1722328401704" duration="8265000" />
+      <workItem from="1722495262732" duration="1972000" />
     </task>
     <task id="LOCAL-00001" summary="你都知道这是小孩子不懂事闹着玩的了，还点进来干吗啊喂">
       <created>1713696159230</created>
@@ -96,15 +202,38 @@
       <option name="project" value="LOCAL" />
       <updated>1713696376261</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="小孩子闹着玩写的">
+      <created>1714149375999</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1714149375999</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="你都知道这是小孩子不懂事闹着玩的了，还点进来干吗啊喂" />
     <MESSAGE value="小孩子闹着玩写的readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="小孩子闹着玩写的readme" />
+    <MESSAGE value="小孩子闹着玩写的" />
+    <option name="LAST_COMMIT_MESSAGE" value="小孩子闹着玩写的" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

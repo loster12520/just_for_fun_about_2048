@@ -13,6 +13,9 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
+    implementation(fileTree(
+        "C:\\Program Files\\Java\\javafx-sdk-22.0.1\\lib"
+    ))
 }
 
 tasks.test {
